@@ -27,6 +27,7 @@ public class App {
 
   public String getUserInfoJSON() throws Exception {
     String url = getUserInfoURL();
+    String sample = getUserInfoURL();
     HttpResponse<JsonNode> res = Unirest.get(url).asJson();
     return res.getBody().toString();
   }

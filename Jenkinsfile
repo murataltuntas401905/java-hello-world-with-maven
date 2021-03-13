@@ -6,6 +6,8 @@ node{
       // Get maven home path
       def mvnHome =  tool name: 'maven3', type: 'maven'
       sh "${mvnHome}/bin/mvn -v"
+      sh "${mvnHome}/bin/mvn clean"
+      sh "${mvnHome}/bin/mvn compile"
       sh "${mvnHome}/bin/mvn test"
    }
    stage('Email Notification'){

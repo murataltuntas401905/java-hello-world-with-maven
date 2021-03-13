@@ -13,4 +13,7 @@ node{
       //Hari''', cc: '', from: '', replyTo: '', subject: 'Jenkins Job', to: 'murat.altuntas401905@gmail.com'
       echo 'Email sent successfully...'
    }
+   stage('Call Main Method'){
+    sh "java -cp target/classes info.maigo.lab.hello.App"
+   }
 }

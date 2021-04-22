@@ -14,6 +14,7 @@ node{
       //mail bcc: '', body: '''Hi Welcome to jenkins email alerts
       //Thanks
       //Hari''', cc: '', from: '', replyTo: '', subject: 'Jenkins Job', to: 'murat.altuntas401905@gmail.com'
+      echo 'Do something later...'
       echo 'Email sent successfully...'
    }
    stage('Call Main Method'){
